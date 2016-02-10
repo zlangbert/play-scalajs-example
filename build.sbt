@@ -68,3 +68,7 @@ lazy val sharedClient = shared.js
 
 // loads the Play project at sbt startup
 onLoad in Global := (Command.process("project server", _: State)) compose (onLoad in Global).value
+
+// for Eclipse users
+EclipseKeys.skipParents in ThisBuild := false
+EclipseKeys.preTasks := Seq(compile in (server, Compile))

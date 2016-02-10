@@ -10,3 +10,6 @@ addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.6")
 
 // A helper plugin to make setting up a Play/Scala.js project easier
 addSbtPlugin("com.vmunier" % "sbt-play-scalajs" % "0.2.9")
+
+// eclipse plugin
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")
